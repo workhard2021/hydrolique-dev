@@ -20,8 +20,8 @@ export const HeaderDesktop=({data,logo}:any)=>{
      }
      return (<nav className="hidden md:flex shadow-sm shadow-blue-200 justify-around w-full">
       <div className="md:w-[20%] xl:w-[30%] w-full flex justify-center items-center">
-          <div className="cursor-pointer text-white md:w-[60%] w-[50%] md:h-[70px]">
-            <Link href="/">
+          <div className="cursor-pointer text-white md:w-[40%] w-[40%] md:h-[70px]">
+            <Link href="/" className='w-full h-full'>
               <div className="w-full h-full bg-url-logo" style={{backgroundImage:`url(${logo})`}} />
             </Link>
           </div>
@@ -35,7 +35,7 @@ export const HeaderDesktop=({data,logo}:any)=>{
                  <span className="whitespace-nowrap hover:text-red-600 transition-all duration-75 cursor-pointer" onMouseEnter={(e)=>changeImage(e,value.sous_menu[0]?.image)}>{value.title} <AiOutlineDown className='inline' /></span>
                }
                {(value.sous_menu && value.sous_menu.length>0) &&<div id={`menu_${index+1}`} className="py-12 sub_menu absolute md:h-[400px] w-[80%] left-[10%] flex">
-                   <div className="relative w-full h-full flex p-0 bg-white shadow-md">
+                   <div className="rounded-md overflow-hidden relative w-full h-full flex p-0 bg-white shadow-md">
                       <div className="w-[50%] h-full flex flex-col p-12">
                       {value.sub_title?<div className="text-gray-500 font-thin py-3 mb-2">{value.sub_title}</div>:null}
                         {value.sous_menu && value.sous_menu.map((val:any,key:number)=>

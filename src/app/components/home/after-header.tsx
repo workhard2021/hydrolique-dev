@@ -12,8 +12,8 @@ const AfterHeader=({data,image}:typeProps)=>{
           <div className='description'>
            {data.map((val,index)=>{
                return <div key={index} className='item'>
-                   <h2 className='item-title'>{val.title}</h2>
-                   <p className="item-description">{val.description}</p>
+                   <h2 className='md:text-start text-center'>{val.title}</h2>
+                   <p className="w-full">{val.description}</p>
                </div>
           })}
           </div> 

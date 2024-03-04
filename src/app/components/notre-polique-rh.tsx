@@ -5,9 +5,9 @@ export const NotrePolitiqueRh=({data}:any)=>{
             <RevealWrapper className="w-full relative" delay={200} duration={1000} reset={true}>
              <div className="w-full m-auto flex justify-between items-start space-y-2 flex-wrap">
                   <div className='w-full'>
-                       <h1 className='w-full text-3xl font-bold py-4 text-blue-900'>{data.title}</h1>
-                       <p className='w-full text-700 mb-2 leading-6 text-justify'>{data.description_1}</p>
-                       <p className='w-full text-700 leading-6 text-justify'>{data.description_2}</p>
+                       <h1 className='w-full py-4'>{data.title}</h1>
+                       <p className='w-full mb-2 text-justify'>{data.description_1}</p>
+                       <p className='w-full text-justify'>{data.description_2}</p>
                   </div>
                   {/* <div className="md:w-[50%] w-full rounded-md h-[320px] bg-url" style={{backgroundImage:`url(${data.image})`}} /> */}
             </div>
@@ -16,8 +16,8 @@ export const NotrePolitiqueRh=({data}:any)=>{
               <RevealWrapper className="w-full relative" delay={200} duration={1000} reset={true}>
                <div className="w-full mx-auto pt-10 mb-4">
                   <div className='w-full'>
-                       <h1 className='w-full text-3xl font-bold py-4 text-blue-900'>{data.sub_title}</h1>
-                       <p className='w-full text-700 leading-6 text-justify'>{data.description_3}</p>
+                       <h2 className='w-full py-4 '>{data.sub_title}</h2>
+                       <p className='w-full text-justify'>{data.description_3}</p>
                   </div>
                </div>
                </RevealWrapper>
@@ -29,9 +29,9 @@ export const NotrePolitiqueRh=({data}:any)=>{
                               <div className='bg-blue-900 rounded-full w-[30px] h-[30px] flex justify-center items-center'>
                                    <span className='text-md m-auto text-white text-justify'>{value.number}</span>
                               </div>
-                              <span className='text-[16px] first-letter:capitalize px-2 w-[80%] font-bold text-blue-900 leading-6'>{value.title}</span>
+                              <h4 className='first-letter:capitalize px-2 w-[80%]'>{value.title}</h4>
                            </div>
-                           <p className='py-4 text-gray-700 leading-6 text-justify'>{value.description}</p>
+                           <p className='py-4 ext-justify'>{value.description}</p>
                     </div></RevealWrapper>)
                  })}
                </div>

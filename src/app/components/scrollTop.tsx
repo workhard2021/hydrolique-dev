@@ -31,7 +31,7 @@ export const ScrollTop=()=>{
              }
       }
   },[scroll]);
-    return (<div className="w-full fixed top-[80%] h-0 flex justify-end right-[3%]" id="scroll-top">
+    return (<div className="w-full z-50 fixed top-[80%] h-0 flex justify-end right-[3%]" id="scroll-top">
              <div onClick={(e)=>scrollTopPage(e)} className="cursor-pointer md:w-[40px] md:h-[40px] w-[40px] h-[40px] flex justify-center rounded-full items-center bg-blue-300">
                   <BsChevronDoubleUp className="inline" size={30}/>
              </div>

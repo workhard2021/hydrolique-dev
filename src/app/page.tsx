@@ -18,9 +18,7 @@ export default function Home() {
         <RevealWrapper className="w-full relative" delay={200} duration={1000} reset={true}>
           <UsValues/>
         </RevealWrapper>
-        <RevealWrapper className="w-full relative" delay={200} duration={1000} reset={true}>
           <Expertises/>
-        </RevealWrapper>
         </Wrapper>
       </LayoutPage>
       </>

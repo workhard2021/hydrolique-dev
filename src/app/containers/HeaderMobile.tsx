@@ -25,21 +25,21 @@ export const HeaderMobile=({data,logo}:any)=>{
       {isOpenMenu?
       <div className="absolute  left-0 top-[82px] w-full overflow-y-auto z-50 p-4 md:h-auto h-[450px] bg-gray-100">
              {data && data.map((value:any,index:number)=>{
-                return <div id={`menu_mobile_${index+1}`} onClick={(e)=>displaySubMenu(e,`menu_mobile_${index+1}`)}  key={index} className="w-auto h-auto p-2 m-2 text-[#231942] hover:text-red-600 transition-all ease-in-out duration-75">
-                       <div  style={{fontWeight:"400"}}  className="leading-8 font-fontWeightSmall text-[20px] w-full my-1">
+                return <div id={`menu_mobile_${index+1}`} onClick={(e)=>displaySubMenu(e,`menu_mobile_${index+1}`)}  key={index} className="w-auto h-auto py-2 m-2 my-0 text-[#231942] hover:text-red-600 transition-all ease-in-out duration-75">
+                       <div  style={{fontWeight:"400"}}  className="leading-8 font-fontWeightSmall text-sm w-full my-0">
                                {value.url!=='/'?<Link className="px-2 uppercase" href={value.url}>{value.title}</Link>
                                 :<Link className="px-2 uppercase" href={value.url}>{value.title}</Link>    
                                }
                                {(value.sous_menu && value.sous_menu.length>0)?<BsChevronDown className="inline" size={20}/>:null}
                        </div>
-                       <div  className="sub_menu_mobile hidden mx-5 leading-8 font-fontWeightBig text-[#231942] text-[20px]">
+                       <div  className="sub_menu_mobile hidden mx-5 leading-8 font-fontWeightBig text-[#231942] text-sm">
                           {(value.sous_menu && value.sous_menu.length>0) && value.sous_menu.map((val:any,key:number)=>{
                               return <div key={key} className="w-full hover:text-red-400 transition-all ease-in-out duration-75">
                                    <BsChevronRight className="inline text-gray-400" size={20}/>
                                    {val.url!=='/'?
-                                      <Link className="px-2 inline-block my-1 first-letter:capitalize" href={val.url}>{val.title}</Link>
+                                      <Link className="px-2 inline-block m-0 first-letter:capitalize" href={val.url}>{val.title}</Link>
                                       :
-                                      <span className="px-2 inline-block my-1 first-letter:capitalize cursor-pointer">{val.title}</span>
+                                      <span className="px-2 inline-block m-0 first-letter:capitalize cursor-pointer">{val.title}</span>
                                     }
                                </div>
                           })}

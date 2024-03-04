@@ -1,6 +1,6 @@
 const DATA={
        logo:{
-          image:'/images/slide.jpeg',
+          image:'/images/home-logo.png',
           title:'Rechercher sur tpdemain.com',
           description:'tpdemain.com est la première bibliothèque de ressources pédagogiques dédiées aux métiers des Travaux Publics.',
           description2: 'Elle est ouverte à tous et entièrement gratuite.',
@@ -34,7 +34,7 @@ const DATA={
            title: "Nos Expertises",
            data:[
              {  id: 1,
-                image:"/images/expertise/traitement-4.png",
+                image:"/images/expertise/gestion-eau.png",
                 imageDetail: "/image/test.jpg",
                 title: "Gestion de l’eau",
                 slug:"gestion-de-l-eaux",
@@ -67,7 +67,7 @@ const DATA={
                 }]
             },
             {   id: 2,
-                image:"/images/expertise/traitement-5.png",
+                image:"/images/expertise/industrie-eau.png",
                 title: "Industrie",
                 slug:"industrie",
                 description: "Adaptation de nos compétences aux besoins spécifiques de l'industrie, avec des solutions clés en main garantissant fiabilité et performance.",
@@ -102,7 +102,7 @@ const DATA={
                ]
             },
             {   id: 3,
-                image:"/images/expertise/traitement-6.png",
+                image:"/images/expertise/irrigation-eau.png",
                 title: "Irrigation",
                 slug:"irregation",
                 description: "Utilisation de technologies avancées pour maximiser l'efficacité de l'irrigation, réduire les pertes d'eau et promouvoir une agriculture durable.",

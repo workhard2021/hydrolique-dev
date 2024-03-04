@@ -13,9 +13,8 @@ export default function Article({params}:any){
                  <LogoSecteur sub_title={data.title} image={image} title={'Expertise'}/>
                  <Wrapper>
                    <Content data={data}/>
-                   <ItemSectionSociete title="Expertises"/>
+                   {/* <ItemSectionSociete title="Expertises"/> */}
                  </Wrapper>
-               
     </LayoutPage>)
 }
 export async function generateStaticParams() {

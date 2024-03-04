@@ -1,4 +1,5 @@
 import DATA from '@/app/constants/data';
+import { RevealWrapper } from 'next-reveal';
 import Image from 'next/image';
 type typeProps = {
      data: any[],
@@ -7,17 +8,18 @@ type typeProps = {
 const Expertises=({data,title}:typeProps)=>{
     return <div className="expertise">
             <h1 className='title'>{title}</h1>
-            <div className='items'>
+            <div className='items gap-5'>
                  {data.map((value,index)=>{
-                    return <div key={index} className='item'>
-                          <div className='shadow-2xl shadow-black image'>
+                    return  <RevealWrapper key={index} className="w-full relative" delay={200} duration={1000} reset={true}>
+                    <div  className='item'>
+                          <div className='image'>
                               <Image src={value.image} alt="..." fill/>
                           </div>
                           <div className='item'>
-                              <h2 className='title'>{value.title}</h2>
+                              <h3 className='title'>{value.title}</h3>
                               <p className='description'>{value.description}</p>
                           </div>
-                    </div>
+                    </div></RevealWrapper>
                  })}
 
             </div>
