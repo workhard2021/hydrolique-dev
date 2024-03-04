@@ -1,7 +1,3 @@
-import { Container } from "@/app/containers/container";
-import { Header } from "@/app/containers/header";
-import { Wrapper } from "@/app/containers/wrapper";
-import { ContactSociete } from "@/app/components/contact-societe";
 import { LogoCandidature } from "@/app/components/logoCandidature";
 import { Contact } from "@/app/components/contact";
 import LayoutPage from "@/app/components/layoutPage";
