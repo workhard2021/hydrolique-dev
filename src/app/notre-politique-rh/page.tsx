@@ -1,5 +1,4 @@
 'use client';
-import { RevealWrapper } from "next-reveal";
 import LayoutPage from "../components/layoutPage";
 import { LogoSecteur } from "../components/logoSecteur";
 import { NotrePolitiqueRh } from "../components/notre-polique-rh";

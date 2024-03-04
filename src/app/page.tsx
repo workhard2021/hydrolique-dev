@@ -1,5 +1,5 @@
 'use client';
-import LayoutPage from "@/app/components/layoutPage";
+import LayoutPage from "./components/layoutPage";
 import AfterHeader from "./components/home/after-header";
 import UsValues from "./components/home/values";
 import Expertises from './components/home/expertises';
