@@ -1,5 +1,5 @@
 import React from "react"
-import { CookiesSite } from "./cookies-site"
+// import { CookiesSite } from "./cookies-site"
 import { ScrollTop } from "./scrollTop"
 import { Header } from "../containers/header"
 import Contact from "./home/contact"
@@ -14,7 +14,7 @@ import Contact from "./home/contact"
         <div className="mx-auto w-full"> 
            {children} 
         </div> 
-        <CookiesSite />
+        {/* <CookiesSite /> */}
         <ScrollTop />
     </main>
     <Contact/>
