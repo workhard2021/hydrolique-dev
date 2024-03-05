@@ -9,7 +9,6 @@ export const NotrePolitiqueRh=({data}:any)=>{
                        <p className='w-full mb-2 text-justify'>{data.description_1}</p>
                        <p className='w-full text-justify'>{data.description_2}</p>
                   </div>
-                  {/* <div className="md:w-[50%] w-full rounded-md h-[320px] bg-url" style={{backgroundImage:`url(${data.image})`}} /> */}
             </div>
             </RevealWrapper>
             <div className="w-full flex justify-between mb-4 flex-wrap bg-url">
@@ -25,7 +24,7 @@ export const NotrePolitiqueRh=({data}:any)=>{
                  {data.nos_valeurs.map((value:any,index:number)=>{
                     return (<RevealWrapper key={index} className="w-full relative" delay={200} duration={1000} reset={true}>
                     <div  className='w-full m-2'>
-                           <div className='flex items-center'>
+                           <div className='flex md:items-center items-start'>
                               <div className='bg-blue-900 rounded-full w-[30px] h-[30px] flex justify-center items-center'>
                                    <span className='text-md m-auto text-white text-justify'>{value.number}</span>
                               </div>

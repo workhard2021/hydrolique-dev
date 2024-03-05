@@ -1,8 +1,8 @@
 const DATA={
        logo:{
           image:'/images/home-logo.png',
-          title:'Rechercher sur tpdemain.com',
-          description:'tpdemain.com est la première bibliothèque de ressources pédagogiques dédiées aux métiers des Travaux Publics.',
+          title:'Oyster technology',
+          description:'Notre Engagement pour un Assainissement Eau de Qualité Supérieure',
           description2: 'Elle est ouverte à tous et entièrement gratuite.',
        },
        missionRaison:{
