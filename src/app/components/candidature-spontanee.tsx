@@ -139,27 +139,27 @@ export const CandidatureSpontanee=({listCountry,paraph}:any)=>{
              {message.error &&<p className="w-full py-4 text-xl text-center text-red-500">{message.error}</p>}
              <form ref={form} className="w-full md:my-8 my-4" onSubmit={(e:any)=>send(e)}>
                  <div className="mb- w-full flex justify-between flex-wrap">
-                   <div className="w-full md:w-[45%] my-2 flex justify-center flex-wrap">
+                   <div className="w-full md:w-[49%] my-2 flex justify-center flex-wrap">
                           <label className="w-full block text-red-400 text-[18px] h-[20px]" htmlFor="first_name">{labelError.first_name||''}</label>
                           <input placeholder="Nom" className="rounded-md outline-none p-1 w-full inline-block h-[40px] border-b-[1px]" type="text" name="first_name" value={localData.first_name}  onChange={saisir}  id="first_name"/>
                     </div>
-                    <div className="w-full md:w-[45%] my-2 flex justify-center flex-wrap">
+                    <div className="w-full md:w-[49%] my-2 flex justify-center flex-wrap">
                         <label className="w-full block text-red-400 text-[18px] h-[20px]" htmlFor="last_name">{labelError.last_name||''}</label>
                         <input placeholder="Prénom" className="rounded-md outline-none p-1 w-full inline-block h-[40px] border-b-[1px]" type="text" name="last_name" value={localData.last_name}  onChange={saisir} id="last_name"/>
                      </div>
                  </div>
                  <div className="mb- w-full flex justify-between flex-wrap">
-                   <div className="w-full md:w-[45%] my-2 flex justify-center flex-wrap">
+                   <div className="w-full md:w-[49%] my-2 flex justify-center flex-wrap">
                           <label className="w-full block text-red-400 text-[18px] h-[20px]" htmlFor="email">{labelError.email||''}</label>
                           <input placeholder="Email" className="rounded-md outline-none p-1 w-full inline-block h-[40px] border-b-[1px]" type="email" name="email" value={localData.email}  onChange={saisir} id="email"/>
                     </div>
-                    <div className="w-full md:w-[45%] my-2 flex justify-center flex-wrap">
+                    <div className="w-full md:w-[49%] my-2 flex justify-center flex-wrap">
                         <label className="w-full block text-red-400 text-[18px] h-[20px]" htmlFor="tel">{labelError.tel || ''}</label>
                         <input placeholder="Numéro de téléphone" className="rounded-md outline-none p-1 w-full inline-block h-[40px] border-b-[1px]" type="text" name="tel" value={localData.tel}  onChange={saisir}  id="tel"/>
                      </div>
                  </div>
                  <div className="mb- w-full flex justify-between flex-wrap">
-                   <div className="w-full md:w-[45%] my-2 flex justify-center flex-wrap">
+                   <div className="w-full md:w-[49%] my-2 flex justify-center flex-wrap">
                           <label className="w-full block text-red-400 text-[18px] h-[20px]" htmlFor="country">{labelError.country || ''}</label>
                           <select  className="outline-none bg-white p-1 w-full inline-block h-[40px] border-b-[1px]" name="country" value={localData.country}  onChange={saisir} id="country">
                                <option value=''>Pays</option>
@@ -168,7 +168,7 @@ export const CandidatureSpontanee=({listCountry,paraph}:any)=>{
                                })}
                           </select>
                     </div>
-                    <div className="w-full md:w-[45%] my-2 flex justify-center flex-wrap">
+                    <div className="w-full md:w-[49%] my-2 flex justify-center flex-wrap">
                         <label className="w-full block text-red-400 text-[18px] h-[20px]" htmlFor="city">{labelError.city || ''}</label>
                         <input placeholder="Ville" className="rounded-md outline-none p-1 w-full inline-block h-[40px] border-b-[1px] " type="text" name="city" value={localData.city}  onChange={saisir} id="city"/>
                      </div>

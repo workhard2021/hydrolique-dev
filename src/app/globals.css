@@ -633,6 +633,7 @@ h1,h2,h3{
  font-weight: var(--bold);
  color: var(--h-color);
  letter-spacing: var(--letter-space-title);
+ font-family: 'Courier New';
 }
 h1{
   text-align: center;
@@ -654,11 +655,13 @@ h4{
   font-size: 1em; 
   color: var(--global-title-color); 
   font-weight: var(--h3-bold); 
+  font-family: 'Courier New';
 }
 h5{
   font-size: 1.3em; 
   color: var(--global-title-color); 
   font-weight: 400;
+  font-family: 'Courier New';
 }
 
 p{
@@ -679,3 +682,7 @@ form input:not(form .file),form select,form textarea{
    background-color: rgb(243, 247, 247) !important;
    border-radius: 10px;
 }
+
+/* .main,.contact, form:not(*) {
+  font-family: 'Courier New';
+}  */

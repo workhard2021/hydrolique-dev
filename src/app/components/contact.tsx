@@ -106,21 +106,21 @@ export const Contact=({data}:any)=>{
           <div className="w-full flex justify-center flex-wrap m-auto md:w-[70%] ">
              <form ref={form}   className="w-full m-auto" onSubmit={(e:any)=>send(e)}>
                  <div className="mb-0 w-full flex justify-between flex-wrap">
-                   <div className="w-[45%] my-2 flex justify-center flex-wrap">
+                   <div className="w-[49%] my-2 flex justify-center flex-wrap">
                           <label className="w-full block text-red-400 text-[18px] h-[20px]" htmlFor="email">{labelError.email || ''}</label>
                           <input placeholder="Email" className="outline-none p-2 w-full inline-block h-[40px] border-b-[1px]" value={localData.email||''} onChange={saisir} type="email" name="email" id="email"/>
                     </div>
-                    <div className="w-[45%] my-2 flex justify-center flex-wrap">
+                    <div className="w-[49%] my-2 flex justify-center flex-wrap">
                         <label className="w-full block text-red-400 text-[18px] h-[20px]" htmlFor="tel">{labelError.tel || ''}</label>
                         <input placeholder="Numéro de télephone" className="outline-none p-2 w-full inline-block h-[40px] border-b-[1px]" value={localData.tel}  onChange={saisir} type="text" name="tel" id="tel"/>
                      </div>
                  </div>
                  <div className="mb-0 w-full flex justify-between flex-wrap">
-                   <div className="w-[45%] my-2 flex justify-center flex-wrap">
+                   <div className="w-[49%] my-2 flex justify-center flex-wrap">
                           <label className="w-full block text-red-400 text-[18px] h-[20px]" htmlFor="first_name">{labelError.first_name || ''}</label>
                           <input placeholder="Nom" className="outline-none p-2 w-full inline-block h-[40px] border-b-[1px]" value={localData.first_name||''} onChange={saisir} type="text" name="first_name" id="first_name"/>
                     </div>
-                    <div className="w-[45%] my-2 flex justify-center flex-wrap">
+                    <div className="w-[49%] my-2 flex justify-center flex-wrap">
                         <label className="w-full block text-red-400 text-[18px] h-[20px]" htmlFor="last_name">{labelError.last_name || ''}</label>
                         <input placeholder="Prénom" className="outline-none p-2 w-full inline-block h-[40px] border-b-[1px]" value={localData.last_name}  onChange={saisir} type="text" name="last_name" id="last_name"/>
                      </div>
@@ -133,12 +133,12 @@ export const Contact=({data}:any)=>{
                     <button  disabled={is_loading} className={`h-[45px] text-[17px] text-white w-full m-auto bg-[rgb(30,58,138)] ${is_loading? 'hover:bg-[rgb(57,82,151)]':''} rounded-md`}>Soumission</button>
                  </div>
              </form>
-             <div className="w-full m-auto py-5">
+             <div className="w-full m-auto py-8">
                 <p className="py-2">Votre vie privée est importante pour nous. En envoyant ce formulaire, vous acceptez les conditions de notre <Link href={'/mentions-legales'} className="underline text-blue-400">Politique de confidentialité</Link>. Veuillez la lire attentivement afin de comprendre comment nous veillons à ce que vos droits soient respectés</p>
              </div>
          </div>
           {/* item contacts */}
-         <div className="relative py-8 w-full md:w-[70%] flex justify-center items-center flex-wrap">
+         <div className="relative my-8 py-8 w-full md:w-[70%] flex justify-center items-center flex-wrap">
               <div className="w-full z-0 h-[125px] absolute top-0 left-0 bg-[rgb(30,58,138)] shadow-md"></div>
               <div className="m-2 z-10 md:h-[230px] h-[240px] w-[33%] flex-grow  p-2 break-all md:w-[230px] bg-white text-center shadow-lg rounded-md flex items-center justify-center flex-wrap">
                 <div className="m-auto">
