@@ -13,7 +13,6 @@ export default function CandidatureSpondaneePage({listCountry,title,image,sub_ti
               
     </LayoutPage>)
 }
-
 CandidatureSpondaneePage.defaultProps={
         listCountry:LISTCOUNTRY,
         paraph:'Vous souhaitez nous rejoindre mais ne trouvez pas d’offre d’emploi correspondant à votre profil? Nous vous invitons à soumettre votre candidature spontanée',

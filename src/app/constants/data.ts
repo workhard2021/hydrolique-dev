@@ -142,19 +142,19 @@ const DATA={
             {
                 id:1,
                 icon: "phone",
-                title: "+212-6 61 05 02 28",
+                title: process.env.NEXT_PUBLIC_TEL,
                 url:""
             },
             {
                 id:2,
                 icon: "globe",
-                title: "www.oyster.com",
-                url:"www.OYSTER.com"
+                title: process.env.NEXT_PUBLIC_SITE_NAME,
+                url: process.env.NEXT_PUBLIC_SITE_URL
             },
             {
                 id:3,
                 icon: "map",
-                title: "123 Anywhere St., Any City",
+                title: process.env.NEXT_PUBLIC_ADDRESS,
                 url:""
             }
           ]

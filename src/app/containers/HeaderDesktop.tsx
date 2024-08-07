@@ -21,7 +21,7 @@ export const HeaderDesktop=({data,logo}:any)=>{
      return (<nav className="hidden md:flex shadow-sm shadow-blue-200 justify-around w-full">
       <div className="md:w-[20%] xl:w-[30%] w-full flex justify-center items-center">
           <div className="cursor-pointer text-white md:w-[40%] w-[40%] md:h-[70px]">
-            <Link href="/" className='w-full h-full'>
+            <Link href={process.env.NEXT_PUBLIC_SITE_URL|| '/'} className='w-full h-full'>
               <div className="w-full h-full bg-url-logo" style={{backgroundImage:`url(${logo})`}} />
             </Link>
           </div>

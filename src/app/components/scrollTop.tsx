@@ -1,6 +1,6 @@
 "use client"; 
 import { useEffect, useState } from "react";
-import { BsChevronDoubleUp } from "react-icons/bs"
+import { BiChevronUp } from "react-icons/bi";
 
 export const ScrollTop=()=>{
   const [scroll,setScroll]=useState(0);
@@ -33,7 +33,7 @@ export const ScrollTop=()=>{
   },[scroll]);
     return (<div className="w-full z-50 fixed top-[80%] h-0 flex justify-end right-[3%]" id="scroll-top">
              <div onClick={(e)=>scrollTopPage(e)} className="cursor-pointer md:w-[40px] md:h-[40px] w-[40px] h-[40px] flex justify-center rounded-full items-center bg-blue-300">
-                  <BsChevronDoubleUp className="inline" size={30}/>
+                  <BiChevronUp className="inline" size={30}/>
              </div>
     </div>)
 }
