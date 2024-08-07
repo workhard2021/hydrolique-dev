@@ -158,7 +158,7 @@ export const Contact=({data}:any)=>{
                 <div className="m-auto">
                      <AiOutlineMail size={40} className="inline-block text-[#122480]"/>
                      <h4 className="w-full py-2">Email</h4>
-                     <p className="w-full">{data.email}</p> 
+                     <p className="w-full lowercase">{data.email}</p> 
                 </div>
               </div>
          </div>

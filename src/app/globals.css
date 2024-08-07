@@ -682,7 +682,9 @@ form input:not(form .file),form select,form textarea{
    background-color: rgb(243, 247, 247) !important;
    border-radius: 10px;
 }
-
+.lowercase::first-letter{
+  text-transform: lowercase !important;
+}
 /* .main,.contact, form:not(*) {
   font-family: 'Courier New';
 }  */
