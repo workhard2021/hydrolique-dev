@@ -4,7 +4,7 @@ const nextConfig = {
         domains:["www.owlguru.com","cdn.ca.emap.com","media.istockphoto.com"]
     },
     env:{
-        NEXT_PUBLIC_SITE_NAME: 'Oyster-system',
+        NEXT_PUBLIC_SITE_NAME: 'Oyster technology',
         NEXT_PUBLIC_SITE_URL: 'https://oyster-technology.com',
         NEXT_PUBLIC_EMAIL: 'admin@oyster-technology.com',
         NEXT_PUBLIC_TEL: '+212 661-050228',
