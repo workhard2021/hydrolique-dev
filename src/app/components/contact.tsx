@@ -134,7 +134,7 @@ export const Contact=({data}:any)=>{
                  </div>
              </form>
              <div className="w-full m-auto py-8">
-                <p className="py-2">Votre vie privée est importante pour nous. En envoyant ce formulaire, vous acceptez les conditions de notre <Link href={'/mentions-legales'} className="underline text-blue-400">Politique de confidentialité</Link>. Veuillez la lire attentivement afin de comprendre comment nous veillons à ce que vos droits soient respectés</p>
+                <p className="py-2">Votre vie privée est importante pour nous. En envoyant ce formulaire, vous acceptez les conditions de notre <Link href={'/contact'} className="underline text-blue-400">Politique de confidentialité</Link>. Veuillez la lire attentivement afin de comprendre comment nous veillons à ce que vos droits soient respectés</p>
              </div>
          </div>
           {/* item contacts */}
