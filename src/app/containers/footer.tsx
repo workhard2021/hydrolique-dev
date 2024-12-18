@@ -26,7 +26,7 @@ export const Footer=({newtwork,right,page}:any)=>{
                  <Link className="first-letter:capitalize inline-block m-3 hover:text-blue-100 " key={key} href={value.url}>{value.title}</Link>
                )}
                <span className="md:inline hidden">|</span>
-               <p className="first-letter:capitalize m-3"> &copy; 2022 - {right}</p>
+               <p className="first-letter:capitalize m-3"> &copy; 2024 - {right}</p>
            </div>
         </div>
     </footer>)

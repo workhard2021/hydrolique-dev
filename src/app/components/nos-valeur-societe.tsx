@@ -30,7 +30,7 @@ NosValeurSociete.defaultProps={
         nos_valeurs:[
          {  number:1,
             title:'CONFIANCE',
-            description:"Construire une relation de confiance avec nos clients, être à l’écoute, rester accessible et réactif, tels sont les engagements sur lesquels nous bâtissons nos partenariats.",
+            description:"Construire une relation de confiance avec nos clients, être à l’écoute, rester accessibles et réactifs : tels sont les engagements sur lesquels nous bâtissons nos partenariats.",
          },
          {  number:2,
             title:"ENGAGEMENT",

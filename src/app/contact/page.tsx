@@ -14,6 +14,8 @@ ContactPage.defaultProps={
       data:{
           email:process.env.NEXT_PUBLIC_EMAIL,
           tel:process.env.NEXT_PUBLIC_TEL,
+          phone: process.env.NEXT_PUBLIC_PHONE,
+          fax: process.env.NEXT_PUBLIC_FAX,
           address:process.env.NEXT_PUBLIC_ADDRESS
       }
 }

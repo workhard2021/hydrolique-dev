@@ -2,14 +2,15 @@ const DATA={
        logo:{
           image:'/images/home-logo.png',
           title:'Oyster technology',
-          description:'Notre Engagement pour un Assainissement Eau de Qualité Supérieure',
+          description:"L'ingénierie de confiance, au service de demain",
+          //description:'Notre Engagement pour un Assainissement Eau de Qualité Supérieure',
           description2: 'Elle est ouverte à tous et entièrement gratuite.',
        },
        missionRaison:{
           image:"/images/after-header.png",
           data:[
-            {title:"Notre raison d’être",description:"Animés par la conviction que l’accès à l’eau est un levier essentiel de santé publique et de qualité de vie, nous contribuons à l’amélioration de la vie des populations et des industriels en assurant l’accès et la gestion de cette ressource vitale avec une approche globale."},
-            {title:"Notre mission",description:"Fournir des solutions innovantes, respectueuses de l'environnement, et à promouvoir la sécurité de l'eau dans toutes nos installations, contribuant ainsi au bien-être des communautés et à la préservation des ressources hydriques."},
+            {title:"Notre raison d’être",description:"Animés par la conviction que l’accès à l’eau est un levier essentiel pour la santé publique et la qualité de vie, nous œuvrons à l’amélioration des conditions de vie des populations et des industriels en garantissant l'accès à cette ressource vitale et sa gestion, dans une approche globale"},
+            {title:"Notre mission",description:"Fournir des solutions innovantes et respectueuses de l'environnement, tout en promouvant la sécurité de l'eau dans toutes nos installations, contribuant ainsi au bien-être des communautés et à la préservation des ressources en eau."},
          ]
         },
         usValues:{
@@ -18,7 +19,7 @@ const DATA={
            data:[
               {
                 title: "confiance",
-                description: "Construire une relation de confiance avec nos clients, être à l’écoute, rester accessible et réactif, tels sont les engagements sur lesquels nous bâtissons nos partenariats.",
+                description: "Construire une relation de confiance avec nos clients, être à l’écoute, rester accessibles et réactifs : tels sont les engagements sur lesquels nous bâtissons nos partenariats.",
               },
               {
                 title: "engagement",
@@ -26,7 +27,7 @@ const DATA={
              },
              {
                 title:"audace",
-                description: "L’audace est une valeur vitale pour notre entreprise, elle nous permet d‘évoluer et de se renouveler constamment face au changement permanant de notre environnement."
+                description: "L’audace est une valeur vitale pour notre entreprise ; elle nous permet d’évoluer et de nous renouveler constamment face au changement permanent de notre environnement."
              }
            ]
         },
@@ -38,13 +39,13 @@ const DATA={
                 imageDetail: "/image/test.jpg",
                 title: "Gestion de l’eau",
                 slug:"gestion-de-l-eaux",
-                description: "Approche holistique pour la gestion des ressources hydriques, couvrant la captation, la distribution, le traitement et la surveillance.",
+                description: "Approche holistique de la gestion des ressources en eau, couvrant la captation, la distribution, le traitement et la surveillance.",
                 list:[{
                     id: 1,
                     image: "/image/test.jpg",
                     title:"Captage de l’eau",
-                    subtitle: "L'extraction des eaux de source et des eaux souterraines à partir de puits et de forages, ainsi que les barrages, est une base essentielle pour notre sécurité d'approvisionnement en eau.",
-                    description: "Oyster Technology propose des solutions clé en main, qu'il s'agisse de solutions pour les puits ou barrage en intégrant des technologies de pompage avancées pour garantir un débit optimal tout en optimisant la consommation énergétique."
+                    subtitle: "L'extraction des eaux de source et des eaux souterraines à partir de puits et de forages, ainsi que des barrages, est une base essentielle pour notre sécurité d'approvisionnement en ea",
+                    description: "Oyster Technology propose des solutions clé en main, qu'il s'agisse de solutions pour les puits ou les barrages, en intégrant des technologies de pompage avancées pour garantir un débit optimal tout en optimisant la consommation énergétique."
                 },{
                     id: 2,
                     image: "/image/test.jpg",
@@ -110,7 +111,7 @@ const DATA={
                     {
                         id: 1,
                         image:"",
-                        title:"conseil et etude",
+                        title:"conseil et étude",
                         subtitle:"Nous mettons en place les moyens humains et techniques nécessaire pour étudier votre projet : Étude technique, choix du matériel et étude budgétaire, notre bureau d’étude est à votre disposition pour vous accompagner et vous guider durant toute cette phase avant-projet.",
                         description: ""
                     },
@@ -137,12 +138,15 @@ const DATA={
           firstImage:"/images/contact.png",
           headSectionImage:"/images/header-section.png",
           lastImage:"",
-          description: "Pour des solutions sur mesure dans le domaine de l'irrigation, du traitement d'eau, de la gestion hydraulique, ou tout autre service spécialisé, n'hésitez pas à nous contacter. Notre équipe d'experts est prête à discuter de vos besoins et à élaborer des solutions adaptées à votre secteur d'activité. Contactez-nous dès aujourd'hui pour entamer une collaboration fructueuse",
+          description: "Pour des solutions sur mesure dans le domaine de l'irrigation, du traitement de l'eau, de la gestion hydraulique ou tout autre service spécialisé, n'hésitez pas à nous contacter. Notre équipe d'experts est prête à discuter de vos besoins et à élaborer des solutions adaptées à votre secteur d'activité. Contactez-nous dès aujourd'hui pour entamer une collaboration fructueuse.",
           list:[
             {
                 id:1,
                 icon: "phone",
-                title: process.env.NEXT_PUBLIC_TEL,
+                isContact: true,
+                tel: process.env.NEXT_PUBLIC_TEL,
+                phone: process.env.NEXT_PUBLIC_PHONE,
+                fax: process.env.NEXT_PUBLIC_FAX,
                 url:""
             },
             {

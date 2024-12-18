@@ -14,7 +14,7 @@ type emailProps={
 }
 
 export const Contact=({data}:any)=>{
-     const initLocalData={first_name:'',last_name:'',email:'',tel:'',message:''};
+     const initLocalData={first_name:'',last_name:'',email:'',phone:'',fax:'',tel:'',message:''};
      const [message,setMessage]=useState({success:'',error:''});
      const [localData,setLocalData]=useState<emailProps>(initLocalData)
      const [labelError,setLabelError]=useState<emailProps>(initLocalData)
@@ -112,7 +112,7 @@ export const Contact=({data}:any)=>{
                     </div>
                     <div className="w-[49%] my-2 flex justify-center flex-wrap">
                         <label className="w-full block text-red-400 text-[18px] h-[20px]" htmlFor="tel">{labelError.tel || ''}</label>
-                        <input placeholder="Numéro de télephone" className="outline-none p-2 w-full inline-block h-[40px] border-b-[1px]" value={localData.tel}  onChange={saisir} type="text" name="tel" id="tel"/>
+                        <input placeholder="Numéro de téléphone" className="outline-none p-2 w-full inline-block h-[40px] border-b-[1px]" value={localData.tel}  onChange={saisir} type="text" name="tel" id="tel"/>
                      </div>
                  </div>
                  <div className="mb-0 w-full flex justify-between flex-wrap">
@@ -150,8 +150,8 @@ export const Contact=({data}:any)=>{
               <div className="m-2 z-10 md:h-[230px] h-[240px] w-[33%] flex-grow  p-2 break-all md:w-[230px] bg-white text-center shadow-lg rounded-md flex items-center justify-center flex-wrap">
                 <div className="m-auto">
                       <BsTelephone size={40} className="inline-block text-[#122480]"/>
-                     <h4 className="w-full py-2">Numéro de téléphone</h4>
-                     <p className="w-full">{data.tel}</p> 
+                     <h4 className="w-full py-2">Contacts</h4>
+                     <p className="w-full">Téléphone: {data.phone}<br/>Fax: {data.fax}</p>
                 </div>
               </div>
               <div className="m-2 z-10 md:h-[230px] h-[240px] w-[33%] flex-grow p-2 break-all md:w-[230px] bg-white text-center shadow-lg rounded-md flex items-center justify-center flex-wrap">

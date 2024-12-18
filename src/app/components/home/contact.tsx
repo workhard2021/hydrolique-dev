@@ -19,7 +19,12 @@ const Contact = ({data}:any)=>{
                        <div className="w-full text-center">{val.url?
                            <Link className="text-white text-xl" href={val.url} >{val.title}</Link>
                            :
-                           <span className="text-white text-xl">{val.title}</span>
+                            val.isContact?
+                             <><span className="text-white text-xl">Téléphone: {val.phone}<br/>
+                               <span className="text-white text-xl">Fax: {val.fax}</span>
+                             </span>
+                             </>
+                            :<span className="text-white text-xl">{val.title}</span>
                         }</div>
                    </div>
                  })

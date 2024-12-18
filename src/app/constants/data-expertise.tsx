@@ -35,7 +35,7 @@ export const EXPERTISE=[
       name:'expertise',
       sub_title:"",
       description:"",
-      body:["Approche holistique pour la gestion des ressources hydriques, couvrant la captation, la distribution, le traitement et la surveillance."],
+      body:["Approche holistique de la gestion des ressources en eau, couvrant la captation, la distribution, le traitement et la surveillance."],
       slug:'gestion-de-l-eaux',
       list:[
          {icon:'',text:"Captage et transport d'eau"},
@@ -47,8 +47,8 @@ export const EXPERTISE=[
          { 
             name:"Captage et transport d'eau",
             value:[
-                "L'extraction des eaux de source et des eaux souterraines à partir de puits et de forages, ainsi que les barrages, est une base essentielle pour notre sécurité d'approvisionnement en eau.",
-                "Oyster Technology propose des solutions complètes dans le domaine de distribution d'eau. Qu'il s'agisse de solutions pour les puits ou les barrages, nous proposons des systèmes de pompage fiables et économiques pour l'exploitation de l'eau, pour chaque domaine d'application et pour tous les niveaux d'eau.",
+                "L'extraction des eaux de source et des eaux souterraines à partir de puits et de forages, ainsi que des barrages, est une base essentielle pour notre sécurité d'approvisionnement en eau.",
+                "Oyster Technology propose des solutions complètes dans le domaine de la distribution d'eau. Qu'il s'agisse de solutions pour les puits ou les barrages, nous proposons des systèmes de pompage fiables et économiques pour l'exploitation de l'eau, pour chaque domaine d'application et pour tous les niveaux d'eau.",
             ],
           },
           { 

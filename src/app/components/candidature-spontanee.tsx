@@ -131,7 +131,7 @@ export const CandidatureSpontanee=({listCountry,paraph}:any)=>{
       });
    }
      return (<RevealWrapper className="w-full relative mb-24" delay={200} duration={1000} reset={true}>
-       <div className="w-full md:w-[70%] m-auto">
+       <div className="w-full md:w-[70%] m-auto candidature-spontanee">
             <div className="w-full px-auto md:my-16 my-8">
                 <h5 className="py-2 w-full text-center">{paraph}</h5>
              </div>
@@ -162,7 +162,6 @@ export const CandidatureSpontanee=({listCountry,paraph}:any)=>{
                    <div className="w-full md:w-[49%] my-2 flex justify-center flex-wrap">
                           <label className="w-full block text-red-400 text-[18px] h-[20px]" htmlFor="country">{labelError.country || ''}</label>
                           <select  className="outline-none bg-white p-1 w-full inline-block h-[40px] border-b-[1px]" name="country" value={localData.country}  onChange={saisir} id="country">
-                               <option value=''>Pays</option>
                                {listCountry.map((value:any,index:number)=>{
                                  return (<option key={index} value={value.name}>{value.name}</option>)
                                })}
