@@ -32,7 +32,7 @@ const DATA={
            ]
         },
         expertises:{
-           title: "Nos Expertises",
+           title: "Nos expertises",
            data:[
              {  id: 1,
                 image:"/images/expertise/gestion-eau.png",
