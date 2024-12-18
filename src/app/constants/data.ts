@@ -2,7 +2,7 @@ const DATA={
        logo:{
           image:'/images/home-logo.png',
           title:'Oyster technology',
-          description:"L'ingénierie de confiance, au service de demain",
+          description:"L'ingénierie de confiance, au service de demain.",
           //description:'Notre Engagement pour un Assainissement Eau de Qualité Supérieure',
           description2: 'Elle est ouverte à tous et entièrement gratuite.',
        },
