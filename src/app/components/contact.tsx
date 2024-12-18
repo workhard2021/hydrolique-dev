@@ -103,7 +103,7 @@ export const Contact=({data}:any)=>{
           <h2 className="w-full m-auto text-center mb-[50px]">Nous contacter</h2>
           {message.success &&<p className="w-full py-4 text-xl text-center text-blue-800">{message.success}</p>}
           {message.error &&<p className="w-full py-4 text-xl text-center text-red-500">{message.error}</p>}
-          <div className="w-full flex justify-center flex-wrap m-auto md:w-[70%] ">
+          <div className="w-full flex justify-center flex-wrap m-auto md:w-[70%] xl:w-[80%]">
              <form ref={form}   className="w-full m-auto" onSubmit={(e:any)=>send(e)}>
                  <div className="mb-0 w-full flex justify-between flex-wrap">
                    <div className="w-[49%] my-2 flex justify-center flex-wrap">
@@ -134,17 +134,17 @@ export const Contact=({data}:any)=>{
                  </div>
              </form>
              <div className="w-full m-auto py-8">
-                <p className="py-2">Votre vie privée est importante pour nous. En envoyant ce formulaire, vous acceptez les conditions de notre <Link href={'/mentions-legales'} className="underline text-blue-400">Politique de confidentialité</Link>. Veuillez la lire attentivement afin de comprendre comment nous veillons à ce que vos droits soient respectés</p>
+                <p className="py-2">Votre vie privée est importante pour nous. En envoyant ce formulaire, vous acceptez les conditions de notre <Link href={'/contact'} className="underline text-blue-400">Politique de confidentialité</Link>. Veuillez la lire attentivement afin de comprendre comment nous veillons à ce que vos droits soient respectés</p>
              </div>
          </div>
           {/* item contacts */}
-         <div className="relative my-8 py-8 w-full md:w-[70%] flex justify-center items-center flex-wrap">
+         <div className="relative my-4 py-8 w-full md:w-[70%] xl:w-[80%] flex justify-center items-center flex-wrap">
               <div className="w-full z-0 h-[125px] absolute top-0 left-0 bg-[rgb(30,58,138)] shadow-md"></div>
               <div className="m-2 z-10 md:h-[230px] h-[240px] w-[33%] flex-grow  p-2 break-all md:w-[230px] bg-white text-center shadow-lg rounded-md flex items-center justify-center flex-wrap">
                 <div className="m-auto">
                       <HiOutlineLocationMarker size={40} className="inline-block text-[#122480]"/>
-                     <h4 className="w-full py-2">Notre bureau principal</h4>
-                     <p className="w-full ">{data.address}</p> 
+                     <h4 className="w-full py-2 text-center">Notre bureau principal</h4>
+                     <p className="w-full text-center">{data.address}</p> 
                 </div>
               </div>
               <div className="m-2 z-10 md:h-[230px] h-[240px] w-[33%] flex-grow  p-2 break-all md:w-[230px] bg-white text-center shadow-lg rounded-md flex items-center justify-center flex-wrap">
@@ -157,8 +157,8 @@ export const Contact=({data}:any)=>{
               <div className="m-2 z-10 md:h-[230px] h-[240px] w-[33%] flex-grow p-2 break-all md:w-[230px] bg-white text-center shadow-lg rounded-md flex items-center justify-center flex-wrap">
                 <div className="m-auto">
                      <AiOutlineMail size={40} className="inline-block text-[#122480]"/>
-                     <h4 className="w-full py-2">Email</h4>
-                     <p className="w-full lowercase">{data.email}</p> 
+                     <h4 className="w-full py-2 text-center">Email</h4>
+                     <p className="w-full lowercase text-center">{data.email}</p> 
                 </div>
               </div>
          </div>
