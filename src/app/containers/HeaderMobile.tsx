@@ -16,7 +16,7 @@ export const HeaderMobile=({data,logo}:any)=>{
             }
       }
       return (<nav className="md:hidden flex justify-around w-full h-auto py-1">
-      <div className="w-[20%] cursor-pointer flex items-center">
+      <div className="w-[30%] cursor-pointer flex items-center">
           <div onClick={()=>route.push(process.env.NEXT_PUBLIC_SITE_URL||'/')}  className="relative w-full h-full bg-url-logo" style={{backgroundImage:`url(${logo})`}} />
       </div>
       <div className="w-[50%] flex justify-end items-center">
