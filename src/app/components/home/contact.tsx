@@ -8,8 +8,8 @@ const Contact = ({data}:any)=>{
            <div className='absolute z-0 top-0 right-0 contact-image'>
                <Image src={data.firstImage} alt="..." fill />
            </div>
-           <div className="w-full z-10 md:w-[60%] p-[20px] md:p-[40px]">
-             <h2 className='contact-title mb-12 text-start capitalize'>{data.title}</h2>
+           <div className="w-full z-10 lg:w-[60%] p-[20px] md:p-[40px]">
+             <h2 className='contact-title mb-8 md:mb-12 text-center w-full md:text-start capitalize'>{data.title}</h2>
              <p className="mb-4">{data.description}</p>
            </div>
             <div className="bg-blue-900 mt-auto p-2 py-3 md:py-8 px-5 md:rounded-r-[80px] w-full md:w-[90%] flex flex-wrap md:flex-nowrap">{

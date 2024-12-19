@@ -1,6 +1,7 @@
 import DATA from '@/app/constants/data';
 import { RevealWrapper } from 'next-reveal';
 import Image from 'next/image';
+import Link from 'next/link';
 type typeProps = {
      data: any[],
      title: string,
@@ -12,9 +13,9 @@ const Expertises=({data,title}:typeProps)=>{
                  {data.map((value,index)=>{
                     return  <RevealWrapper key={index} className="w-full relative" delay={200} duration={1000} reset={true}>
                     <div  className='item'>
-                          <div className='image'>
+                          <Link href={'/expertise/'+value.slug} className='image block'>
                               <Image src={value.image} alt="..." fill/>
-                          </div>
+                          </Link>
                           <div className='item'>
                               <h3 className='title'>{value.title}</h3>
                               <p className='description'>{value.description}</p>

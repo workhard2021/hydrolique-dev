@@ -518,6 +518,10 @@ p,ul,span{
   height: 400px;
 }
 @media (max-width:800px) {
+  .contact-image{
+     display: none;
+  }
+
   /* afterHeader */
   .afterHeader .description{
       padding: 0rem;
@@ -561,7 +565,6 @@ p,ul,span{
     width: 300px;
     height: 300px;
     opacity: 0.3;
-    display: block;
    }
   /* expertise */
   .expertise .items{

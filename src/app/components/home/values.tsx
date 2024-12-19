@@ -9,7 +9,7 @@ type typeProps = {
 const UsValues=({data,image,title}:typeProps)=>{
     return <div className="usValue">
             <h1 className='title'>{title}</h1>
-            <div className='usValue-image-mobile'><Image src={image|| ''} alt="..." fill /></div>
+            <div className='usValue-image-mobile md:block hidden'><Image src={image|| ''} alt="..." fill /></div>
             <div className='item-1 item'>
                 <h3 className='title'>{data[0].title}</h3>
                 <p className='description'>{data[0].description}</p>
